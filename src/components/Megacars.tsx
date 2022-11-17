@@ -7,3 +7,5 @@ function Megacars() {
     </div>
   );
 }
+
+export default Megacars;
