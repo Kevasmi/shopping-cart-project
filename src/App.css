@@ -1,5 +1,6 @@
 body {
   color: white;
+  height: 100vh;
 }
 
 a {
@@ -8,7 +9,6 @@ a {
 }
 
 .App {
-  height: 100vh;
   text-align: center;
   background-image: url(./imgs/CC850\ HEADER.jpg);
   background-size: cover;
