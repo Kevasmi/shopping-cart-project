@@ -1,4 +1,14 @@
-const carData = [
+import uniqid from 'uniqid';
+
+interface CarData {
+  name: string;
+  description: string;
+  price: number;
+  img: string;
+  id: string;
+}
+
+const carData: CarData[] = [
   {
     name: 'CC850',
     description: `The CC850 is the ideal combination of classic design and
@@ -13,6 +23,7 @@ const carData = [
     light-speed transmission (LST).`,
     price: 3650000,
     img: '../imgs/CC850_Car.jpg',
+    id: uniqid(),
   },
   {
     name: 'Gemera',
@@ -25,6 +36,7 @@ const carData = [
     friends.`,
     price: 1700000,
     img: '../imgs/Gemera_Car.jpg',
+    id: uniqid(),
   },
   {
     name: 'Jesko Absolut',
@@ -42,6 +54,7 @@ const carData = [
     unbelievably fast.`,
     price: 2840000,
     img: '../imgs/Jesko_Absolut_Car.jpg',
+    id: uniqid(),
   },
   {
     name: 'Jesko',
@@ -56,6 +69,7 @@ const carData = [
     downforce, making it the ultimate track weapon.`,
     price: 2700000,
     img: '../imgs/Jesko_Car.jpg',
+    id: uniqid(),
   },
   {
     name: 'Regera',
@@ -74,6 +88,7 @@ const carData = [
     and a unique Direct Drive experience.`,
     price: 2900000,
     img: '../imgs/Regera_Car.jpg',
+    id: uniqid(),
   },
   {
     name: 'Jesko',
@@ -89,6 +104,7 @@ const carData = [
     stunning looks.`,
     price: 2850000,
     img: '../imgs/One_1_Car.jpg',
+    id: uniqid(),
   },
 ];
 
