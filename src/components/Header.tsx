@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
 
-function Header() {
+interface IProps {
+  setBackground: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const Header: FC<IProps> = (props) => {
   const navStyle = {
     color: 'white',
     textDecoration: 'none',
@@ -14,13 +18,25 @@ function Header() {
           src='https://listcarbrands.com/wp-content/uploads/2016/02/Koenigsegg-L%D0%BEgo.png'
           alt='Koenigsegg logo'
         />
-        <h1>Koenigsegg</h1>
+        <h1 onClick={() => props.setBackground('./imgs/CC850_HEADER.jpg')}>
+          Koenigsegg
+        </h1>
       </Link>
       <div className='nav-menu'>
-        <Link style={navStyle} to='/megacars' className='megacars-link'>
+        <Link
+          style={navStyle}
+          to='/megacars'
+          className='megacars-link'
+          onClick={() => props.setBackground('./imgs/Black_Background.jpg')}
+        >
           Megacars
         </Link>
-        <Link style={navStyle} to='/about-us' className='about-link'>
+        <Link
+          style={navStyle}
+          to='/about-us'
+          className='about-link'
+          onClick={() => props.setBackground('./imgs/Black_Background.jpg')}
+        >
           About Us
         </Link>
         <button className='shopping-cart'>
@@ -29,6 +45,6 @@ function Header() {
       </div>
     </nav>
   );
-}
+};
 
 export default Header;
