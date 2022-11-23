@@ -1,0 +1,23 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-image: url('../imgs/CC850_Car.jpg');
+  background-size: cover;
+  height: 500px;
+  width: 500px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.card-interface {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-counter-and-buttons {
+  display: flex;
+}
