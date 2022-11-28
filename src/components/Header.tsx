@@ -15,7 +15,7 @@ const Header: FC<IProps> = (props) => {
     <nav className='nav-links'>
       <Link style={navStyle} to='/' className='logo-link'>
         <img
-          src='https://listcarbrands.com/wp-content/uploads/2016/02/Koenigsegg-L%D0%BEgo.png'
+          src='https://www.koenigseggflorida.com/wp-content/themes/DealerInspireDealerTheme/images/logo-footer.png'
           alt='Koenigsegg logo'
         />
         <h1 onClick={() => props.setBackground('./imgs/CC850_HEADER.jpg')}>
