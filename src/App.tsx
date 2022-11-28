@@ -31,5 +31,3 @@ const App: FC = () => {
 };
 
 export default App;
-
-// setBackground={setBackground}
