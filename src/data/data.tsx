@@ -1,3 +1,9 @@
+import CC850 from '../imgs/CC850_Car.jpg';
+import gemera from '../imgs/Gemera_Car.jpg';
+import jeskoAbsolut from '../imgs/Jesko_Absolut_Car.jpg';
+import jesko from '../imgs/Jesko_Car.jpg';
+import regera from '../imgs/Regera_Car.jpg';
+import oneOne from '../imgs/One_1_Car.jpg';
 import uniqid from 'uniqid';
 
 interface CarData {
@@ -22,7 +28,7 @@ const carData: CarData[] = [
     experience, including the engage shift system (ESS) and
     light-speed transmission (LST).`,
     price: 3650000,
-    img: '../imgs/CC850_Car.jpg',
+    img: CC850,
     id: uniqid(),
   },
   {
@@ -35,7 +41,7 @@ const carData: CarData[] = [
     megacar experience can now be shared with family and
     friends.`,
     price: 1700000,
-    img: '../imgs/Gemera_Car.jpg',
+    img: gemera,
     id: uniqid(),
   },
   {
@@ -53,7 +59,7 @@ const carData: CarData[] = [
     Looking at the math and our advanced simulations – it will be
     unbelievably fast.`,
     price: 2840000,
-    img: '../imgs/Jesko_Absolut_Car.jpg',
+    img: jeskoAbsolut,
     id: uniqid(),
   },
   {
@@ -68,7 +74,7 @@ const carData: CarData[] = [
     system. Advanced aerodynamics offer over 1000 kg of
     downforce, making it the ultimate track weapon.`,
     price: 2700000,
-    img: '../imgs/Jesko_Car.jpg',
+    img: jesko,
     id: uniqid(),
   },
   {
@@ -87,11 +93,11 @@ const carData: CarData[] = [
     technology that blends outrageous speed, supreme comfort,
     and a unique Direct Drive experience.`,
     price: 2900000,
-    img: '../imgs/Regera_Car.jpg',
+    img: regera,
     id: uniqid(),
   },
   {
-    name: 'Jesko',
+    name: 'One:1',
     description: `The iconic One:1 is the first homologated production car in the
     world with one megawatt of power, crowning it the world´s
     first production megacar. The hp-to-kg curb weight ratio is an
@@ -103,7 +109,7 @@ const carData: CarData[] = [
     speed while never straying from everyday usability and
     stunning looks.`,
     price: 2850000,
-    img: '../imgs/One_1_Car.jpg',
+    img: oneOne,
     id: uniqid(),
   },
 ];
