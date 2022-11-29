@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/shopping-cart-project/static/css/main.8acdfe70.css",
-    "main.js": "/shopping-cart-project/static/js/main.0dde22fa.js",
-    "static/media/One_1_Car.jpg": "/shopping-cart-project/static/media/One_1_Car.3fd832cc9c4aaa170f90.jpg",
-    "static/media/CC850_HEADER.jpg": "/shopping-cart-project/static/media/CC850_HEADER.919d7a5ba3762a1c27db.jpg",
-    "static/media/Regera_Car.jpg": "/shopping-cart-project/static/media/Regera_Car.b6702d6c060b4abc23a1.jpg",
-    "static/media/Jesko_Car.jpg": "/shopping-cart-project/static/media/Jesko_Car.c37a6907e3aba0deae72.jpg",
-    "static/media/CC850_Car.jpg": "/shopping-cart-project/static/media/CC850_Car.028519f163a668e791f4.jpg",
-    "static/media/Jesko_Absolut_Car.jpg": "/shopping-cart-project/static/media/Jesko_Absolut_Car.592ee2ec591f1fb9f020.jpg",
-    "static/media/Koenigsegg-Lоgo.png": "/shopping-cart-project/static/media/Koenigsegg-Lоgo.949c9734c103352d301d.png",
-    "static/media/Gemera_Car.jpg": "/shopping-cart-project/static/media/Gemera_Car.c985b43d757bc46b54a0.jpg",
-    "static/media/Black_Background.jpg": "/shopping-cart-project/static/media/Black_Background.623c2543125a1d14e5ae.jpg",
-    "index.html": "/shopping-cart-project/index.html",
-    "main.8acdfe70.css.map": "/shopping-cart-project/static/css/main.8acdfe70.css.map",
-    "main.0dde22fa.js.map": "/shopping-cart-project/static/js/main.0dde22fa.js.map"
+    "main.css": "/Kevasmi/shopping-cart-project/static/css/main.8acdfe70.css",
+    "main.js": "/Kevasmi/shopping-cart-project/static/js/main.0f167df6.js",
+    "static/media/One_1_Car.jpg": "/Kevasmi/shopping-cart-project/static/media/One_1_Car.3fd832cc9c4aaa170f90.jpg",
+    "static/media/CC850_HEADER.jpg": "/Kevasmi/shopping-cart-project/static/media/CC850_HEADER.919d7a5ba3762a1c27db.jpg",
+    "static/media/Regera_Car.jpg": "/Kevasmi/shopping-cart-project/static/media/Regera_Car.b6702d6c060b4abc23a1.jpg",
+    "static/media/Jesko_Car.jpg": "/Kevasmi/shopping-cart-project/static/media/Jesko_Car.c37a6907e3aba0deae72.jpg",
+    "static/media/CC850_Car.jpg": "/Kevasmi/shopping-cart-project/static/media/CC850_Car.028519f163a668e791f4.jpg",
+    "static/media/Jesko_Absolut_Car.jpg": "/Kevasmi/shopping-cart-project/static/media/Jesko_Absolut_Car.592ee2ec591f1fb9f020.jpg",
+    "static/media/Koenigsegg-Lоgo.png": "/Kevasmi/shopping-cart-project/static/media/Koenigsegg-Lоgo.949c9734c103352d301d.png",
+    "static/media/Gemera_Car.jpg": "/Kevasmi/shopping-cart-project/static/media/Gemera_Car.c985b43d757bc46b54a0.jpg",
+    "static/media/Black_Background.jpg": "/Kevasmi/shopping-cart-project/static/media/Black_Background.623c2543125a1d14e5ae.jpg",
+    "index.html": "/Kevasmi/shopping-cart-project/index.html",
+    "main.8acdfe70.css.map": "/Kevasmi/shopping-cart-project/static/css/main.8acdfe70.css.map",
+    "main.0f167df6.js.map": "/Kevasmi/shopping-cart-project/static/js/main.0f167df6.js.map"
   },
   "entrypoints": [
     "static/css/main.8acdfe70.css",
-    "static/js/main.0dde22fa.js"
+    "static/js/main.0f167df6.js"
   ]
 }
