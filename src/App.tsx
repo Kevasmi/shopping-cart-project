@@ -18,7 +18,7 @@ const App: FC = () => {
         backgroundImage: 'url(' + require(`${background}`) + ')',
       }}
     >
-      <Router>
+      <Router basename='/react-shopping-cart'>
         <Header setBackground={setBackground}></Header>
         <Routes>
           <Route path='/' element={<Home />} />

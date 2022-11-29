@@ -44,5 +44,6 @@
   },
   "devDependencies": {
     "@types/uniqid": "^5.3.2"
-  }
+  },
+  "homepage": "/react-shopping-cart"
 }
