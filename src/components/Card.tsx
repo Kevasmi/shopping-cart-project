@@ -1,25 +1,45 @@
-import React from 'react';
+import React, { FC } from 'react';
 import '../styles/Card.css';
 
-function Card() {
+interface IProps {
+  carInfo: {
+    name: string;
+    description: string;
+    price: number;
+    id: string;
+    img: string;
+  };
+}
+
+const Card: FC<IProps> = (props) => {
+  // const gradientOne = `rgba(0, 0, 0, 0) 0%`;
+  // const gradientTwo = `rgba(0, 0, 0, 0.4) 80%`;
+  // const gradientThree = `rgba(0, 0, 0, 0.8) 100%`;
+
+  const style = {
+    background: `url(${props.carInfo.img})`,
+    backgroundPosition: 'center',
+    backgroundSize: '100% 100%',
+  };
+
   return (
     <li className='card'>
-      <section className='card-content'>
-        <h2 className='card-title'>CC850</h2>
-        <section className='card-body'>
-          <h3 className='card-price'>$2,800,000</h3>
-          <div className='card-interface'>
-            <div className='card-counter-and-buttons'>
-              <button className='subtract-btn'>-</button>
-              <p className='counter'>0</p>
-              <button className='add-btn'>+</button>
-            </div>
-            <button className='add-cart-btn'>Add</button>
+      <div className='card-container' style={style}>
+        <div className='card-title'>
+          <h2 className='car-name'>{props.carInfo.name}</h2>
+        </div>
+        <h3 className='card-price'>${props.carInfo.price}</h3>
+        <div className='card-interface'>
+          <div className='card-counter-and-buttons'>
+            <button className='subtract-btn'>-</button>
+            <p className='counter'>0</p>
+            <button className='add-btn'>+</button>
           </div>
-        </section>
-      </section>
+          <button className='add-cart-btn'>Add</button>
+        </div>
+      </div>
     </li>
   );
-}
+};
 
 export default Card;

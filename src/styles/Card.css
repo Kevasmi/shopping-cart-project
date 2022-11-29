@@ -1,23 +1,97 @@
 .card {
-  display: flex;
-  flex-direction: column;
-  background-image: url('../imgs/CC850_Car.jpg');
-  background-size: cover;
-  height: 500px;
-  width: 500px;
+  max-height: 760px;
+  max-width: 760px;
 }
 
-.card-content {
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 6fr 1fr;
+  grid-template-areas:
+    'title title'
+    'price  interface';
+  /* background: linear-gradient(
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.4) 80%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url('../imgs/CC850_Car.jpg');
+  background-position: center;
+  background-size: 100% 100%; */
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  transition: all 0.5s;
+}
+
+.card-container:hover {
+  background-size: 110% 110% !important;
+}
+.card-title {
+  grid-area: title;
+  margin: auto auto 0 auto;
+  padding: 1.7rem;
+  width: 350px;
+  text-align: left;
+  border-bottom: 3px solid #fff;
+}
+
+.car-name {
+  font-size: 1.7rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+.card-price {
+  grid-area: price;
+  margin-top: auto;
+  font-size: 2rem;
+}
+
+.card-interface {
+  grid-area: interface;
   display: flex;
   flex-direction: column;
   margin-top: auto;
 }
 
-.card-interface {
-  display: flex;
-  flex-direction: column;
-}
-
 .card-counter-and-buttons {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+}
+
+.subtract-btn,
+.add-btn {
+  background: none;
+  border: 0.0001em solid rgba(255, 255, 255, 0);
+  border-radius: 100%;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  width: 30px;
+  height: 35px;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.subtract-btn:hover,
+.add-btn:hover {
+  background-color: rgba(255, 255, 255, 0.055);
+  filter: blur(0.05px);
+}
+
+.counter {
+  cursor: default;
+}
+
+.add-cart-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
 }
