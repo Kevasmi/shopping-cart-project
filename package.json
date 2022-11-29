@@ -1,5 +1,6 @@
 {
   "name": "shopping-cart-project",
+  "homepage": "https://kevasmi.github.io/shopping-cart-project",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -47,6 +48,5 @@
   },
   "devDependencies": {
     "@types/uniqid": "^5.3.2"
-  },
-  "homepage": "https://kevasmi.github.io/shopping-cart-project/"
+  }
 }
