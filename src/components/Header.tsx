@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
 import '../styles/Header.css';
 
 interface IProps {
@@ -40,7 +41,11 @@ const Header: FC<IProps> = (props) => {
         >
           About Us
         </Link>
-        <button className='shopping-cart'>
+        <Button
+          style={{ width: '3rem', height: '3rem', position: 'relative' }}
+          variant='outline-primary'
+          className='rounded-circle'
+        >
           <svg
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 576 512'
@@ -50,7 +55,7 @@ const Header: FC<IProps> = (props) => {
           </svg>
 
           <div
-            className='shopping-cart-counter'
+            className='rounded-circle bg-danger d-flex justify-content-center align-items-center'
             style={{
               color: 'white',
               width: '1.5rem',
@@ -60,8 +65,10 @@ const Header: FC<IProps> = (props) => {
               right: 0,
               transform: 'translate(25%, 25%)',
             }}
-          ></div>
-        </button>
+          >
+            0
+          </div>
+        </Button>
       </div>
     </nav>
   );
