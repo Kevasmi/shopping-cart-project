@@ -27,6 +27,7 @@
 .card-container:hover {
   background-size: 110% 110% !important;
 }
+
 .card-title {
   grid-area: title;
   margin: auto auto 0 auto;
