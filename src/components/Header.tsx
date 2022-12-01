@@ -5,9 +5,11 @@ import '../styles/Header.css';
 
 interface IProps {
   setBackground: React.Dispatch<React.SetStateAction<string>>;
+  setShow: React.Dispatch<React.SetStateAction<boolean>>;
+  handleShow: () => void;
 }
 
-const Header: FC<IProps> = (props) => {
+const Header: FC<IProps> = ({ setBackground, setShow, handleShow }) => {
   const navStyle = {
     color: 'white',
     textDecoration: 'none',
@@ -20,7 +22,7 @@ const Header: FC<IProps> = (props) => {
           src='https://www.koenigseggflorida.com/wp-content/themes/DealerInspireDealerTheme/images/logo-footer.png'
           alt='Koenigsegg logo'
         />
-        <h1 onClick={() => props.setBackground('./imgs/CC850_HEADER.jpg')}>
+        <h1 onClick={() => setBackground('./imgs/CC850_HEADER.jpg')}>
           Koenigsegg
         </h1>
       </Link>
@@ -29,7 +31,7 @@ const Header: FC<IProps> = (props) => {
           style={navStyle}
           to='/megacars'
           className='megacars-link'
-          onClick={() => props.setBackground('./imgs/Black_Background.jpg')}
+          onClick={() => setBackground('./imgs/Black_Background.jpg')}
         >
           Megacars
         </Link>
@@ -37,11 +39,12 @@ const Header: FC<IProps> = (props) => {
           style={navStyle}
           to='/about-us'
           className='about-link'
-          onClick={() => props.setBackground('./imgs/Black_Background.jpg')}
+          onClick={() => setBackground('./imgs/Black_Background.jpg')}
         >
           About Us
         </Link>
         <Button
+          onClick={() => setShow(true)}
           style={{ width: '3rem', height: '3rem', position: 'relative' }}
           variant='outline-primary'
           className='rounded-circle'
