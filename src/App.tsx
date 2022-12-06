@@ -6,12 +6,13 @@ import Megacars from './components/Megacars';
 import About from './components/About';
 import ShoppingCart from './components/Modal';
 import './styles/App.css';
+import { ShoppingCartProvider } from './context/ShoppingCartContext';
 
 const App: FC = () => {
   const [background, setBackground] = useState<string>(
     './imgs/CC850_HEADER.jpg'
   );
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState<boolean>(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -23,19 +24,21 @@ const App: FC = () => {
         backgroundImage: 'url(' + require(`${background}`) + ')',
       }}
     >
-      <Router basename='/shopping-cart-project'>
-        <Header
-          setBackground={setBackground}
-          setShow={setShow}
-          handleShow={handleShow}
-        ></Header>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/megacars' element={<Megacars />} />
-          <Route path='/about-us' element={<About />} />
-        </Routes>
-      </Router>
-      <ShoppingCart handleClose={handleClose} show={show}></ShoppingCart>
+      <ShoppingCartProvider>
+        <Router basename='/shopping-cart-project'>
+          <Header
+            setBackground={setBackground}
+            setShow={setShow}
+            handleShow={handleShow}
+          ></Header>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/megacars' element={<Megacars />} />
+            <Route path='/about-us' element={<About />} />
+          </Routes>
+        </Router>
+        <ShoppingCart handleClose={handleClose} show={show}></ShoppingCart>
+      </ShoppingCartProvider>
     </div>
   );
 };
