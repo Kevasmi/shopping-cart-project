@@ -6,7 +6,7 @@ import '../styles/Megacars.css';
 function Megacars() {
   const cardArray = carData;
   const cardItems = cardArray.map((car) => {
-    return <Card key={car.id} carInfo={car} />;
+    return <Card id={car.id} key={car.id} carInfo={car} />;
   });
   return <ul className='card-list'>{cardItems}</ul>;
 }

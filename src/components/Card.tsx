@@ -9,13 +9,10 @@ interface IProps {
     id: string;
     img: string;
   };
+  id: string;
 }
 
 const Card: FC<IProps> = (props) => {
-  // const gradientOne = `rgba(0, 0, 0, 0) 0%`;
-  // const gradientTwo = `rgba(0, 0, 0, 0.4) 80%`;
-  // const gradientThree = `rgba(0, 0, 0, 0.8) 100%`;
-
   const style = {
     background: `url(${props.carInfo.img})`,
     backgroundPosition: 'center',
