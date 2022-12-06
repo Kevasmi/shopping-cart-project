@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { useShoppingCart } from '../context/ShoppingCartContext';
 import '../styles/Card.css';
 
 interface IProps {
@@ -19,6 +20,15 @@ const Card: FC<IProps> = (props) => {
     backgroundSize: '100% 100%',
   };
 
+  const {
+    getItemQuantity,
+    increaseCartQuantity,
+    decreaseCartQuantity,
+    removeFromCart,
+  } = useShoppingCart();
+
+  const quantity = getItemQuantity(props.carInfo.id);
+
   return (
     <li className='card'>
       <div className='card-container' style={style}>
@@ -28,11 +38,28 @@ const Card: FC<IProps> = (props) => {
         <h3 className='card-price'>${props.carInfo.price}</h3>
         <div className='card-interface'>
           <div className='card-counter-and-buttons'>
-            <button className='subtract-btn'>-</button>
-            <p className='counter'>0</p>
-            <button className='add-btn'>+</button>
+            <button
+              className='subtract-btn'
+              onClick={() => decreaseCartQuantity(props.carInfo.id)}
+            >
+              -
+            </button>
+            <p className='counter'>{quantity}</p>
+            <button
+              className='add-btn'
+              onClick={() => increaseCartQuantity(props.carInfo.id)}
+            >
+              +
+            </button>
           </div>
-          <button className='add-cart-btn'>Add</button>
+          {quantity === 0 ? null : (
+            <button
+              className='add-cart-btn'
+              onClick={() => removeFromCart(props.carInfo.id)}
+            >
+              Remove
+            </button>
+          )}
         </div>
       </div>
     </li>
