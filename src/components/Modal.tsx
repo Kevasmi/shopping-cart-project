@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import CartList from './CartList';
 
 interface IProps {
   handleClose: () => void;
@@ -14,8 +15,7 @@ const ShoppingCart: FC<IProps> = ({ handleClose, show }) => {
         <Modal.Title>Your Cart:</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        I will not close if you click outside me. Don't even try to press escape
-        key.
+        <CartList></CartList>
       </Modal.Body>
       <Modal.Footer>
         <Button variant='secondary' onClick={handleClose}>
