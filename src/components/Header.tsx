@@ -25,7 +25,10 @@ const Header: FC<IProps> = ({ setBackground, setShow, handleShow }) => {
           src='https://www.koenigseggflorida.com/wp-content/themes/DealerInspireDealerTheme/images/logo-footer.png'
           alt='Koenigsegg logo'
         />
-        <h1 onClick={() => setBackground('./imgs/CC850_HEADER.jpg')}>
+        <h1
+          onClick={() => setBackground('./imgs/CC850_HEADER.jpg')}
+          className='logo-text'
+        >
           Koenigsegg
         </h1>
       </Link>

@@ -25,6 +25,11 @@
   margin-right: 1rem;
 }
 
+.logo-text {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  text-transform: none;
+}
+
 .nav-menu {
   display: flex;
   align-items: center;
