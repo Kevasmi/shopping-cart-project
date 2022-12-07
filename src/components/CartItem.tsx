@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import { CloseButton, Stack } from 'react-bootstrap';
 import { useShoppingCart } from '../context/ShoppingCartContext';
 import carData from '../data/data';
