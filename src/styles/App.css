@@ -168,4 +168,5 @@ li {
   text-align: center;
   background-size: cover;
   min-height: 100vh;
+  max-width: 100vw;
 }
