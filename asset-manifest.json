@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopping-cart-project/static/css/main.8acdfe70.css",
-    "main.js": "/shopping-cart-project/static/js/main.5d2cf2e9.js",
+    "main.css": "/shopping-cart-project/static/css/main.393974da.css",
+    "main.js": "/shopping-cart-project/static/js/main.7387a618.js",
     "static/media/One_1_Car.jpg": "/shopping-cart-project/static/media/One_1_Car.3fd832cc9c4aaa170f90.jpg",
     "static/media/CC850_HEADER.jpg": "/shopping-cart-project/static/media/CC850_HEADER.919d7a5ba3762a1c27db.jpg",
     "static/media/Regera_Car.jpg": "/shopping-cart-project/static/media/Regera_Car.b6702d6c060b4abc23a1.jpg",
@@ -12,11 +12,11 @@
     "static/media/Gemera_Car.jpg": "/shopping-cart-project/static/media/Gemera_Car.c985b43d757bc46b54a0.jpg",
     "static/media/Black_Background.jpg": "/shopping-cart-project/static/media/Black_Background.623c2543125a1d14e5ae.jpg",
     "index.html": "/shopping-cart-project/index.html",
-    "main.8acdfe70.css.map": "/shopping-cart-project/static/css/main.8acdfe70.css.map",
-    "main.5d2cf2e9.js.map": "/shopping-cart-project/static/js/main.5d2cf2e9.js.map"
+    "main.393974da.css.map": "/shopping-cart-project/static/css/main.393974da.css.map",
+    "main.7387a618.js.map": "/shopping-cart-project/static/js/main.7387a618.js.map"
   },
   "entrypoints": [
-    "static/css/main.8acdfe70.css",
-    "static/js/main.5d2cf2e9.js"
+    "static/css/main.393974da.css",
+    "static/js/main.7387a618.js"
   ]
 }
