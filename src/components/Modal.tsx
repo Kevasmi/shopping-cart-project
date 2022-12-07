@@ -30,7 +30,9 @@ const ShoppingCart: FC<IProps> = ({ handleClose, show }) => {
         <Button variant='light' onClick={handleClose}>
           Close
         </Button>
-        <Button variant='primary'>Purchase</Button>
+        <Button variant='primary' onClick={handleClose}>
+          Purchase
+        </Button>
       </Modal.Footer>
     </Modal>
   );
