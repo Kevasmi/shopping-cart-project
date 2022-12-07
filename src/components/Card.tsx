@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import { useShoppingCart } from '../context/ShoppingCartContext';
 import '../styles/Card.css';
+import { formatCurrency } from '../utlities/formatCurrency';
 
 interface IProps {
   carInfo: {
@@ -35,7 +36,7 @@ const Card: FC<IProps> = (props) => {
         <div className='card-title'>
           <h2 className='car-name'>{props.carInfo.name}</h2>
         </div>
-        <h3 className='card-price'>${props.carInfo.price}</h3>
+        <h3 className='card-price'>{formatCurrency(props.carInfo.price)}</h3>
         <div className='card-interface'>
           <div className='card-counter-and-buttons'>
             <button
