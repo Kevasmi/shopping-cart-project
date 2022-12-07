@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import '../styles/Header.css';
+import { useShoppingCart } from '../context/ShoppingCartContext';
 
 interface IProps {
   setBackground: React.Dispatch<React.SetStateAction<string>>;
@@ -14,6 +15,8 @@ const Header: FC<IProps> = ({ setBackground, setShow, handleShow }) => {
     color: 'white',
     textDecoration: 'none',
   };
+
+  const { cartQuantity } = useShoppingCart();
 
   return (
     <nav className='nav-links'>
@@ -69,7 +72,7 @@ const Header: FC<IProps> = ({ setBackground, setShow, handleShow }) => {
               transform: 'translate(25%, 25%)',
             }}
           >
-            0
+            {cartQuantity}
           </div>
         </Button>
       </div>
