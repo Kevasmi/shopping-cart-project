@@ -36,4 +36,27 @@ These functions are then used in various components where needed to manipulate c
 ![image](https://user-images.githubusercontent.com/96889143/231598489-aabeefbe-018a-4a0b-b561-9e874b08d4be.png)
 
 ### React Bootstrap
-I used React Bootstrap to handle creating a quick and easy to modify modal component. It has built in micro-components for UI interactions. Also much like Bootstrap, it has it's own pre-made classes that made integrating the modal to the page much more straightforawrd.
+I used React Bootstrap to handle creating a quick and easy to modify modal component. It has built in micro-components for UI interactions. Also much like Bootstrap, it has it's own pre-made classes that made integrating the modal to the page much more straightforward.
+
+## Application In Action
+
+**Homepage** 
+
+https://user-images.githubusercontent.com/96889143/231601682-5148f7c4-4ea9-417d-b5ff-4c04f7a2c78d.mp4
+
+
+**Megacars**  
+
+https://user-images.githubusercontent.com/96889143/231601903-111a47a4-5428-4a1f-9129-1cbab2ea2aee.mp4
+
+
+**Car Cards**  
+
+https://user-images.githubusercontent.com/96889143/231601424-7920b234-dc13-4820-baa4-6744a8f7976c.mp4
+
+**Shopping Cart**
+
+https://user-images.githubusercontent.com/96889143/231601995-8ce8d45c-bcfe-4cfd-b5a6-2ec5825ccd10.mp4
+
+
+
